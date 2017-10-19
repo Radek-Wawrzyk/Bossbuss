@@ -1,0 +1,52 @@
+//main: main.less
+
+#contact {
+  margin: -270px 0 50px 0;
+}
+.contact-header {
+  box-shadow: 2px 3px 5px 0 rgba(0,0,0,0.35);
+  text-align: center;
+  width: 33%;
+  background: white;
+}
+.contact-header h2 {
+  padding: 15px 10px;
+  background: @blue;
+  color: @white;
+}
+.contact-header-info {
+  padding: 10px 0;
+}
+.contact-header-info li {
+  margin: 14px 0;
+  font-size: 22px;
+  color: @grey;
+}
+.contact-header-info li:nth-child(4)  {
+  font-size: 18px;
+}
+.contact-us {
+  background: @grey;
+  padding: 15px 10px;
+  color: @white;
+  text-align: center;
+}
+
+// Media
+
+@media screen and (max-width: 992px) {
+  #contact {
+    margin: -60px 0 50px 0;
+  }
+  .contact-header {
+    margin: 0 auto 25px auto;
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contact-header {
+    width: 100%;
+    margin: 0;
+  }
+}

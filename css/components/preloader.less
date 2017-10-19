@@ -1,0 +1,50 @@
+//main: main.less
+
+.preloader {
+  z-index: 999999;
+  position: fixed;
+}
+.preloader-left {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: @white;
+  transition: 2s;
+}
+.preloader-right {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: @white;
+  transition: 2s;
+}
+.preloader-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  font-size: 42px;
+  animation: fadein 1.5s infinite;
+  z-index: 99999;
+}
+
+//Keyframes
+
+@keyframes left {
+  from {width: 50%;}
+  to {width: 0;}
+}
+@keyframes right {
+  from {width: 50%;}
+  to {width: 0;}
+}
+@keyframes fadein {
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}

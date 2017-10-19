@@ -1,0 +1,29 @@
+//main: main.less
+
+.owl-dots {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2px;
+}
+.owl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  border: 1px solid @grey;
+  background: @white;
+  margin-right: 5px;
+  display: inline-block;
+}
+.owl-dot.active {
+  background: @blue;
+  border-color: @blue;
+}
+
+//Media
+
+@media screen and (max-width: 992px) {
+  .owl-dots {
+    margin-top: 10px;
+  }
+}

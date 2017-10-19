@@ -1,0 +1,52 @@
+//main: main.less
+
+.about-content {
+  padding: 50px 15px;
+  color: @darkgrey;
+  text-align: center;
+  box-shadow: 0 1px 1px 1px rgba(50,50,50,0.15);
+  overflow: hidden;
+}
+.about-site {
+  display: flex;
+  flex-direction: row;
+}
+.about-site-tile-img {
+  width: 40%;
+  margin-right: 25px;
+}
+.about-site-tile-content {
+  width: 60%;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  background: @grey;
+}
+.about-site-tile-content p {
+  color: @white;
+}
+
+//Media
+
+@media screen and (max-width: 992px) {
+  .about-site {
+    flex-direction: column;
+  }
+  .about-site-tile-content, .about-site-tile-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .about-content {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about-site-tile-content {
+    height: auto;
+    padding: 40px 10px;
+  }
+}

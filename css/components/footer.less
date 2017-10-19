@@ -1,0 +1,59 @@
+//main: main.less
+
+footer {
+  width: 100%;
+  height: 150px;
+  background: @grey;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.footer-text {
+  color: @white;
+  text-transform: uppercase;
+  font-size: 16px;
+  width: 100%;
+}
+.footer-logo {
+  height: 100%;
+  padding: 10px 10px;
+  width: 100%;
+}
+.footer-logo img {
+  display: block;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
+//Media
+
+@media screen and (max-width: 768px) {
+
+  footer {
+    height: 100px;
+  }
+  .footer-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .footer-container {
+    padding: 0 10px;
+  }
+  .footer-text {
+    font-size: 12px;
+  }
+  .footer-logo {
+    padding: 10px 0;
+  }
+}

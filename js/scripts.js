@@ -1,16 +1,49 @@
 
+  //Preloader & Afterloader
   $(document).ready(function() {
-    $(window).load(function(){
-      $(".preloader-left, .preloader-right ").css('width', '0')
-      $(".preloader-text").fadeOut("fast");
-      $("body").css({
-        'overflow':'visible'
-      });
-      $(".preloader").css(
-
-      );
+      $('a').click(function(e){
+        redirect = $(this).attr('href');
+        e.preventDefault();
+        $('body').fadeOut("slow", function(){
+          document.location.href = redirect;
+        });
     });
   });
+
+  //Menu mobile
+  $(document).ready(function() {
+    $(".navigation-button").click(function() {
+      $(this).toggleClass('open');
+      $(".navigation-menu").toggleClass('open');
+    });
+  });
+
+  //Modal
+
+  $(document).ready(function() {
+    $(".modal-open").click(function() {
+      var modal_id = $(this).attr("data-modal");
+
+      $(".modal").addClass('overflow');
+
+      $(".modal").fadeOut();
+      $("#" + modal_id).fadeIn();
+
+      $(".btn-close-modal").click(function() {
+        $(".modal").fadeOut();
+        $(".modal").removeClass('overflow');
+      });
+
+      $(".fa-times").click(function() {
+        $(".modal").fadeOut();
+        $(".modal").removeClass('overflow');
+      });
+    });
+  });
+
+  //aos
+
+  AOS.init();
 
   // Text slider
   $(document).ready(function(){
@@ -21,17 +54,7 @@
        pagination: true,
        autoplay: true,
        autoplayTimeout: 3000,
+       smartSpeed: 1000,
        autoplayHoverPause: true
     });
   });
-
-  //Menu
-  $(document).ready(function() {
-    $(".menu-btn").click(function() {
-      $(".right-menu").toggleClass('show');
-    });
-    $(".right-menu span").click(function() {
-      $(".right-menu").toggleClass('show');
-    });
-  });
-

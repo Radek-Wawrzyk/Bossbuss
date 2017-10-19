@@ -1,0 +1,218 @@
+//main: main.less
+
+.services-container {
+
+}
+.services-item {
+  width: 100%;
+  display: flex;
+}
+.item-information {
+  width: 50%;
+  margin: 0 20px 0 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.item-name {
+  padding: 35px 15px;
+  box-shadow: 0 0 1px 0 rgba(0,0,0,0.35);
+  margin: 0 0 20px 0;
+  color: @grey;
+  width: 100%;
+}
+.item-tiles {
+  display: flex;
+}
+.item-price, .item-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 15px;
+  color: @white;
+  height: 200px;
+  width: 50%;
+}
+.item-price {
+  background: @grey;
+  transition: 0.5s;
+  border: 2px solid @grey;
+}
+.item-price:hover {
+  cursor: pointer;
+  background: @white;
+  color: @blue;
+  border-color: @blue;
+}
+.item-price span {
+  padding-top: 5px;
+}
+.item-description {
+  background: @blue;
+  margin-right: 20px;
+}
+.services-container .services-item:nth-child(4n+1) .item-information {
+  order: 1;
+  margin: 0 0 0 20px;
+}
+
+//Information
+
+.information-container {
+  display: flex;
+}
+#services .about-content {
+  width: 50%;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.about-buttons {
+  width: 50%;
+}
+.info-regulations {
+  position: relative;
+  height: 140px;
+  background: @blue;
+  color: @white;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 20px;
+}
+.info-regulations::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: @white;
+  transition: 1s;
+}
+.info-regulations:hover::before {
+  transform: translateX(0);
+}
+.info-regulations:hover {
+  color: @blue;
+}
+.info-regulations a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+.info-prices-regulations {
+  position: relative;
+  height: 140px;
+  background: @grey;
+  color: @white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+.info-prices-regulations p {
+  transition: 0.2s;
+}
+.info-prices-regulations:hover p {
+  opacity: 0;
+}
+.info-prices-regulations a {
+  transform: translateY(100%);
+  transition: 0.7s;
+  width: 50%;
+  display: block;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: @white;
+  color: @blue;
+  text-decoration: none;
+}
+.info-prices-regulations a span {
+  padding-left: 5px;
+}
+.info-prices-regulations a:nth-child(2) {
+  left: 50%;
+  background: @blue;
+  color: @white;
+  transform: translateY(-100%);
+}
+.info-prices-regulations:hover a {
+  transform: translateY(0);
+}
+.info-prices-regulations:hover p {
+  opacity: 0;
+}
+
+//item Img
+
+.item-img {
+  width: 50%;
+  height: 318px;
+  display: flex;
+}
+
+//Media
+
+@media screen and (max-width: 992px) {
+  .services-item {
+    flex-wrap: wrap;
+  }
+  .item-information, .item-tiles, .item-img, .item-img {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .item-name {
+    margin: 20px 0;
+  }
+  .item-img {
+    height: auto;
+  }
+  .services-container .services-item:nth-child(4n+1) .item-information {
+    order: 0;
+    margin: 0;
+  }
+  .information-container {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  #services .about-content {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .about-buttons {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .item-tiles {
+    flex-wrap: wrap;
+  }
+  .item-price {
+    width: 100%;
+  }
+  .item-description {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .about-buttons {
+    font-size: 14px;
+  }
+}
