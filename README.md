@@ -1,10 +1,10 @@
 # Bossbuss
-Strona poświęcona wypożyczalni samochodów dostawczych. Sama strona wygląda dobrze, jednakże kod jest fatalny i właśnie pracuję nad refactoringiem kodu by był w pełni semnatyczny i zrozumiały.
+Strona poświęcona wypożyczalni samochodów kurierskich. Kod uległ znacznej refaktoryzacji.
 
 Wykorzystane technologie:
 - HTML5
 - CSS
 - LESS
-- Bootstrap 3
 - Jquery
+- Owl.Carousel 2
 - Aos.js
