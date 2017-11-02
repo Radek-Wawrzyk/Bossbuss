@@ -8,6 +8,7 @@
           document.location.href = redirect;
         });
     });
+
   });
 
   //Menu mobile
@@ -30,12 +31,16 @@
       $("#" + modal_id).fadeIn();
 
       $(".btn-close-modal").click(function() {
-        $(".modal").fadeOut();
+        $(".modal").fadeOut(function () {
+          $(this).hide();
+        });
         $(".modal").removeClass('overflow');
       });
 
       $(".fa-times").click(function() {
-        $(".modal").fadeOut();
+        $(".modal").fadeOut(function () {
+          $(this).hide();
+        });
         $(".modal").removeClass('overflow');
       });
     });

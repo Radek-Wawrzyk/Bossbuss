@@ -21,7 +21,7 @@
         <div class="services-container">
           <div class="services-item">
             <div class="item-information" data-aos="zoom-in-left" data-aos-duration="1000">
-              <h3 class="item-name">Mercedes Sprinter  2008r</h3>
+              <h3 class="item-name">Mercedes Sprinter  2008</h3>
               <div class="item-tiles">
                 <p class="item-description">
                   z naszej floty oferujemy bla bla bla bla
@@ -41,7 +41,7 @@
 
           <div class="services-item">
             <div class="item-information" data-aos="zoom-in-right" data-aos-duration="1000">
-              <h3 class="item-name">Renault Master 2010r</h3>
+              <h3 class="item-name">Renault Master 2010</h3>
               <div class="item-tiles">
                 <p class="item-description">
                   z naszej floty oferujemy bla bla bla bla
@@ -61,7 +61,7 @@
 
           <div class="services-item">
             <div class="item-information" data-aos="zoom-in-left" data-aos-duration="1000">
-              <h3 class="item-name">Mercedes  Sprinter 2006r</h3>
+              <h3 class="item-name">Mercedes  Sprinter 2006</h3>
               <div class="item-tiles">
                 <p class="item-description">
                   z naszej floty oferujemy bla bla bla bla
@@ -81,7 +81,7 @@
 
           <div class="services-item">
             <div class="item-information" data-aos="zoom-in-right" data-aos-duration="1000">
-              <h3 class="item-name">Iveco Dailly 2006r</h3>
+              <h3 class="item-name">Iveco Dailly 2006</h3>
               <div class="item-tiles">
                 <p class="item-description">
                   z naszej floty oferujemy bla bla bla bla
@@ -101,7 +101,7 @@
 
           <div class="services-item">
             <div class="item-information" data-aos="zoom-in-left" data-aos-duration="1000">
-              <h3 class="item-name">Peugote Boxer 2008r</h3>
+              <h3 class="item-name">Peugeot Boxer 2008</h3>
               <div class="item-tiles">
                 <p class="item-description">
                   z naszej floty oferujemy bla bla bla bla
@@ -121,7 +121,7 @@
 
           <div class="services-item">
             <div class="item-information" data-aos="zoom-in-right" data-aos-duration="1000">
-              <h3 class="item-name">Fiat Ducato </h3>
+              <h3 class="item-name">Fiat Ducato</h3>
               <div class="item-tiles">
                 <p class="item-description">
                   z naszej floty oferujemy bla bla bla bla
@@ -168,7 +168,7 @@
   <div class="modal" id="siema">
     <div class="modal-body">
       <div class="modal-header">
-        <h4>Mercedes sprinter 2008r</h4>
+        <h4>Mercedes sprinter 2008</h4>
         <span class="fa fa-times" aria-hidden="true"></span>
       </div>
       <div class="modal-content">

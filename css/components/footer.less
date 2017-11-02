@@ -20,18 +20,19 @@ footer {
   color: @white;
   text-transform: uppercase;
   font-size: 16px;
-  width: 100%;
-}
-.footer-logo {
-  height: 100%;
-  padding: 10px 10px;
-  width: 100%;
 }
 .footer-logo img {
   display: block;
   width: auto;
   height: 100%;
   margin: 0 auto;
+}
+.footer-text a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+.footer-text a:hover {
+  color: @blue;
 }
 
 //Media
@@ -43,12 +44,14 @@ footer {
   }
   .footer-text {
     font-size: 14px;
+    padding: 0 10px;
   }
 }
 
 @media screen and (max-width: 470px) {
   .footer-container {
     padding: 0 10px;
+    flex-wrap: wrap;
   }
   .footer-text {
     font-size: 12px;

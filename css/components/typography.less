@@ -7,11 +7,23 @@ h1,h2,h3,h4,h5,h6 {font-weight: 500;}
 h1 {font-size: 36px;}
 h2 {font-size: 30px;}
 h3 {font-size: 28px;}
+h4 {font-size: 24px;}
 p {font-size: 20px; line-height: 1.42857143;}
 
 .bold {font-weight: bold;}
 
 a {color:inherit;}
+
+.model-list {padding: 0 0 20px 15px;}
+.model-list li {
+  text-transform: none;
+  position: relative;
+}
+.model-list li::before {
+  content: "-";
+  padding-right: 5px;
+}
+
 
 @media screen and (max-width: 768px) {
   h1 {font-size: 28px;}
