@@ -39,8 +39,8 @@
             <div class="about-content">
               <div class="owl-carousel">
                 <p>
-                  Na naszym koncie widnieje już duża ilość w pełni zadowolonych z naszych usług klientów.
-                  Dołącz do nich już dziś! skontaktuj się z nami.
+                  Samochody w bardzo dobrym stanie, profesjonalne podejście i przejrzysty regulamin!
+                  Ogromna satysfakcja ze współpracy, jak najbardziej polecam. ~Andrzej
                 </p>
                 <p>
                   Na naszym koncie widnieje już duża ilość w pełni zadowolonych z naszych usług klientów.
